@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController, Instantiable {
     
     private var viewModel: HomeViewModel?
     

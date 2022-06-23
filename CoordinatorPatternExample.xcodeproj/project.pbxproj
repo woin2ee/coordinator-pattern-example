@@ -22,6 +22,7 @@
 		E84C4A862864716300493D27 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C4A852864716300493D27 /* Coordinator.swift */; };
 		E84C4A88286471E900493D27 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C4A87286471E900493D27 /* HomeCoordinator.swift */; };
 		E84C4A8A286473E400493D27 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C4A89286473E400493D27 /* HomeViewModel.swift */; };
+		E84C4A8C2864AF3800493D27 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C4A8B2864AF3800493D27 /* Instantiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E84C4A852864716300493D27 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E84C4A87286471E900493D27 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E84C4A89286473E400493D27 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E84C4A8B2864AF3800493D27 /* Instantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				E84C4A852864716300493D27 /* Coordinator.swift */,
+				E84C4A8B2864AF3800493D27 /* Instantiable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				E84C4A8128646FF600493D27 /* SecondViewController.swift in Sources */,
 				E84C4A832864701000493D27 /* ThirdViewController.swift in Sources */,
 				E84C4A88286471E900493D27 /* HomeCoordinator.swift in Sources */,
+				E84C4A8C2864AF3800493D27 /* Instantiable.swift in Sources */,
 				E84C4A7F28646FC300493D27 /* FirstViewController.swift in Sources */,
 				E84C4A862864716300493D27 /* Coordinator.swift in Sources */,
 			);
@@ -462,7 +466,6 @@
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoordinatorPatternExample/Resources/Info.plist;
-				INFOPLIST_KEY_NSMainNibFile = Home;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -492,7 +495,6 @@
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoordinatorPatternExample/Resources/Info.plist;
-				INFOPLIST_KEY_NSMainNibFile = Home;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
