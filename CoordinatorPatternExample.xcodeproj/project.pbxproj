@@ -23,6 +23,12 @@
 		E84C4A88286471E900493D27 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C4A87286471E900493D27 /* HomeCoordinator.swift */; };
 		E84C4A8A286473E400493D27 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C4A89286473E400493D27 /* HomeViewModel.swift */; };
 		E84C4A8C2864AF3800493D27 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C4A8B2864AF3800493D27 /* Instantiable.swift */; };
+		E883C1402864C707009A2470 /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C13F2864C707009A2470 /* FirstCoordinator.swift */; };
+		E883C1422864C70D009A2470 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C1412864C70D009A2470 /* SecondCoordinator.swift */; };
+		E883C1442864C718009A2470 /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C1432864C718009A2470 /* ThirdCoordinator.swift */; };
+		E883C1462864D4AB009A2470 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C1452864D4AB009A2470 /* FirstViewModel.swift */; };
+		E883C1482864DCA4009A2470 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C1472864DCA4009A2470 /* SecondViewModel.swift */; };
+		E883C14A2864DCAE009A2470 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C1492864DCAE009A2470 /* ThirdViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,12 @@
 		E84C4A87286471E900493D27 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E84C4A89286473E400493D27 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E84C4A8B2864AF3800493D27 /* Instantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
+		E883C13F2864C707009A2470 /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		E883C1412864C70D009A2470 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		E883C1432864C718009A2470 /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
+		E883C1452864D4AB009A2470 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		E883C1472864DCA4009A2470 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		E883C1492864DCAE009A2470 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +164,7 @@
 		E84C4A6D28646F1500493D27 /* FirstScene */ = {
 			isa = PBXGroup;
 			children = (
+				E883C13C2864C6E0009A2470 /* Coordinator */,
 				E84C4A7128646F6700493D27 /* View */,
 				E84C4A7028646F6000493D27 /* ViewModel */,
 			);
@@ -161,6 +174,7 @@
 		E84C4A6E28646F4000493D27 /* SecondScene */ = {
 			isa = PBXGroup;
 			children = (
+				E883C13D2864C6EF009A2470 /* Coordinator */,
 				E84C4A7428646F6E00493D27 /* View */,
 				E84C4A7228646F6A00493D27 /* ViewModel */,
 			);
@@ -170,6 +184,7 @@
 		E84C4A6F28646F4600493D27 /* ThirdScene */ = {
 			isa = PBXGroup;
 			children = (
+				E883C13E2864C6F1009A2470 /* Coordinator */,
 				E84C4A7628646F7100493D27 /* View */,
 				E84C4A7528646F7000493D27 /* ViewModel */,
 			);
@@ -179,6 +194,7 @@
 		E84C4A7028646F6000493D27 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E883C1452864D4AB009A2470 /* FirstViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,6 +211,7 @@
 		E84C4A7228646F6A00493D27 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E883C1472864DCA4009A2470 /* SecondViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,6 +228,7 @@
 		E84C4A7528646F7000493D27 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E883C1492864DCAE009A2470 /* ThirdViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,6 +249,30 @@
 				E84C4A8B2864AF3800493D27 /* Instantiable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E883C13C2864C6E0009A2470 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E883C13F2864C707009A2470 /* FirstCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E883C13D2864C6EF009A2470 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E883C1412864C70D009A2470 /* SecondCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E883C13E2864C6F1009A2470 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E883C1432864C718009A2470 /* ThirdCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,13 +351,19 @@
 			files = (
 				E84C4A52286461A700493D27 /* HomeViewController.swift in Sources */,
 				E84C4A8A286473E400493D27 /* HomeViewModel.swift in Sources */,
+				E883C1422864C70D009A2470 /* SecondCoordinator.swift in Sources */,
 				E84C4A4E286461A700493D27 /* AppDelegate.swift in Sources */,
 				E84C4A50286461A700493D27 /* SceneDelegate.swift in Sources */,
+				E883C1402864C707009A2470 /* FirstCoordinator.swift in Sources */,
+				E883C14A2864DCAE009A2470 /* ThirdViewModel.swift in Sources */,
 				E84C4A8128646FF600493D27 /* SecondViewController.swift in Sources */,
 				E84C4A832864701000493D27 /* ThirdViewController.swift in Sources */,
 				E84C4A88286471E900493D27 /* HomeCoordinator.swift in Sources */,
+				E883C1442864C718009A2470 /* ThirdCoordinator.swift in Sources */,
 				E84C4A8C2864AF3800493D27 /* Instantiable.swift in Sources */,
+				E883C1462864D4AB009A2470 /* FirstViewModel.swift in Sources */,
 				E84C4A7F28646FC300493D27 /* FirstViewController.swift in Sources */,
+				E883C1482864DCA4009A2470 /* SecondViewModel.swift in Sources */,
 				E84C4A862864716300493D27 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class HomeCoordinator: Coordinator {
+final class HomeCoordinator: ParentCoordinator {
     
-    var childCoordinators: [Coordinator] = []
+    var childCoordinators: [ChildCoordinator] = []
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -18,7 +18,7 @@ final class HomeCoordinator: Coordinator {
     
     func start() {
         let homeVC = HomeViewController.instantiate(storyboardName: "Home")
-        homeVC.bind(viewModel: DefaultHomeViewModel())
+        homeVC.bind(viewModel: DefaultHomeViewModel(coordinatorDelegate: self))
         self.navigationController.pushViewController(homeVC, animated: false)
     }
 }
@@ -26,14 +26,29 @@ final class HomeCoordinator: Coordinator {
 extension HomeCoordinator: HomeCoordinatingDelegate {
     
     func pushToFirstView() {
-        
+        let firstCoordinator = FirstCoordinator(
+            parentCoordinator: self,
+            navigationController: self.navigationController
+        )
+        childCoordinators.append(firstCoordinator)
+        firstCoordinator.start()
     }
     
     func pushToSecondView() {
-        
+        let secondCoordinator = SecondCoordinator(
+            parentCoordinator: self,
+            navigationController: self.navigationController
+        )
+        childCoordinators.append(secondCoordinator)
+        secondCoordinator.start()
     }
     
     func pushToThirdView() {
-        
+        let thirdCoordinator = ThirdCoordinator(
+            parentCoordinator: self,
+            navigationController: self.navigationController
+        )
+        childCoordinators.append(thirdCoordinator)
+        thirdCoordinator.start()
     }
 }
