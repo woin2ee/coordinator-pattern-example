@@ -11,12 +11,14 @@ protocol HomeCoordinatingDelegate: AnyObject {
     func pushToFirst()
     func pushToSecond()
     func pushToThird()
+    func presentToModal()
 }
 
 protocol HomeViewModelInput {
     func didTapMoveFirstButton()
     func didTapMoveSecondButton()
     func didTapMoveThirdButton()
+    func didTapPresentModalButton()
 }
 
 protocol HomeViewModel: HomeViewModelInput {}
@@ -42,5 +44,9 @@ extension DefaultHomeViewModel: HomeViewModel {
     
     func didTapMoveThirdButton() {
         coordinatorDelegate?.pushToThird()
+    }
+    
+    func didTapPresentModalButton() {
+        coordinatorDelegate?.presentToModal()
     }
 }

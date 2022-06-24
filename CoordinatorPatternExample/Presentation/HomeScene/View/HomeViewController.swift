@@ -30,4 +30,8 @@ final class HomeViewController: UIViewController, Instantiable {
     @IBAction func moveThirdButtonDidTap(_ sender: Any) {
         viewModel?.didTapMoveThirdButton()
     }
+    
+    @IBAction func presentModalButtonDidTap(_ sender: Any) {
+        viewModel?.didTapPresentModalButton()
+    }
 }

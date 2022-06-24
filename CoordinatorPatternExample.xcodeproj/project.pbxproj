@@ -29,6 +29,9 @@
 		E883C1462864D4AB009A2470 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C1452864D4AB009A2470 /* FirstViewModel.swift */; };
 		E883C1482864DCA4009A2470 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C1472864DCA4009A2470 /* SecondViewModel.swift */; };
 		E883C14A2864DCAE009A2470 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E883C1492864DCAE009A2470 /* ThirdViewModel.swift */; };
+		E8E4DB992865B5EF0090F487 /* Modal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E4DB982865B5EF0090F487 /* Modal.storyboard */; };
+		E8E4DB9B2865B5F70090F487 /* ModalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4DB9A2865B5F70090F487 /* ModalCoordinator.swift */; };
+		E8E4DB9D2865B6170090F487 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4DB9C2865B6170090F487 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		E883C1452864D4AB009A2470 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
 		E883C1472864DCA4009A2470 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		E883C1492864DCAE009A2470 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
+		E8E4DB982865B5EF0090F487 /* Modal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modal.storyboard; sourceTree = "<group>"; };
+		E8E4DB9A2865B5F70090F487 /* ModalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCoordinator.swift; sourceTree = "<group>"; };
+		E8E4DB9C2865B6170090F487 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 				E84C4A6D28646F1500493D27 /* FirstScene */,
 				E84C4A6E28646F4000493D27 /* SecondScene */,
 				E84C4A6F28646F4600493D27 /* ThirdScene */,
+				E8E4DB942865B5C40090F487 /* ModalScene */,
 				E84C4A842864715400493D27 /* Utils */,
 			);
 			path = Presentation;
@@ -275,6 +282,32 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		E8E4DB942865B5C40090F487 /* ModalScene */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4DB972865B5CF0090F487 /* Coordinator */,
+				E8E4DB962865B5CC0090F487 /* View */,
+			);
+			path = ModalScene;
+			sourceTree = "<group>";
+		};
+		E8E4DB962865B5CC0090F487 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4DB982865B5EF0090F487 /* Modal.storyboard */,
+				E8E4DB9C2865B6170090F487 /* ModalViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8E4DB972865B5CF0090F487 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4DB9A2865B5F70090F487 /* ModalCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +371,7 @@
 				E84C4A55286461A700493D27 /* Home.storyboard in Resources */,
 				E84C4A7B28646FAD00493D27 /* Second.storyboard in Resources */,
 				E84C4A7D28646FB500493D27 /* Third.storyboard in Resources */,
+				E8E4DB992865B5EF0090F487 /* Modal.storyboard in Resources */,
 				E84C4A7828646F8D00493D27 /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +388,7 @@
 				E883C1422864C70D009A2470 /* SecondCoordinator.swift in Sources */,
 				E84C4A4E286461A700493D27 /* AppDelegate.swift in Sources */,
 				E84C4A50286461A700493D27 /* SceneDelegate.swift in Sources */,
+				E8E4DB9B2865B5F70090F487 /* ModalCoordinator.swift in Sources */,
 				E883C1402864C707009A2470 /* FirstCoordinator.swift in Sources */,
 				E883C14A2864DCAE009A2470 /* ThirdViewModel.swift in Sources */,
 				E84C4A8128646FF600493D27 /* SecondViewController.swift in Sources */,
@@ -364,6 +399,7 @@
 				E883C1462864D4AB009A2470 /* FirstViewModel.swift in Sources */,
 				E84C4A7F28646FC300493D27 /* FirstViewController.swift in Sources */,
 				E883C1482864DCA4009A2470 /* SecondViewModel.swift in Sources */,
+				E8E4DB9D2865B6170090F487 /* ModalViewController.swift in Sources */,
 				E84C4A862864716300493D27 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

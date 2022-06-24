@@ -52,6 +52,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEl-36-nK6">
+                                <rect key="frame" x="102.5" y="700" width="209.5" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Present Modal">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="presentModalButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBK-sZ-kb0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -61,8 +71,10 @@
                             <constraint firstItem="cRs-g7-Gy2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UeC-G2-hZ5"/>
                             <constraint firstItem="eq7-Kw-BJz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZSc-rJ-lTN"/>
                             <constraint firstItem="DWB-GB-fas" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.7" id="j5M-Dp-TAY"/>
+                            <constraint firstItem="BEl-36-nK6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.6" id="pxB-2C-Dvq"/>
                             <constraint firstItem="RNa-cC-IfN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sNC-QM-9EK"/>
                             <constraint firstItem="RNa-cC-IfN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vRX-N1-IAU"/>
+                            <constraint firstItem="BEl-36-nK6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wMm-Hh-Ceg"/>
                             <constraint firstItem="cRs-g7-Gy2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.4" id="xrQ-tJ-FL4"/>
                         </constraints>
                     </view>
