@@ -53,7 +53,11 @@ extension HomeCoordinator: HomeCoordinatingDelegate {
     }
     
     func presentToModal() {
-        let modalCoordinator = ModalCoordinator(navigationController: self.navigationController)
+        let modalCoordinator = ModalCoordinator(
+            parentCoordinator: self,
+            navigationController: self.navigationController
+        )
+        childCoordinators.append(modalCoordinator)
         modalCoordinator.start()
     }
 }

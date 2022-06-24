@@ -32,6 +32,7 @@
 		E8E4DB992865B5EF0090F487 /* Modal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E4DB982865B5EF0090F487 /* Modal.storyboard */; };
 		E8E4DB9B2865B5F70090F487 /* ModalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4DB9A2865B5F70090F487 /* ModalCoordinator.swift */; };
 		E8E4DB9D2865B6170090F487 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4DB9C2865B6170090F487 /* ModalViewController.swift */; };
+		E8E4DB9F2865B6200090F487 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4DB9E2865B6200090F487 /* ModalViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		E8E4DB982865B5EF0090F487 /* Modal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modal.storyboard; sourceTree = "<group>"; };
 		E8E4DB9A2865B5F70090F487 /* ModalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCoordinator.swift; sourceTree = "<group>"; };
 		E8E4DB9C2865B6170090F487 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		E8E4DB9E2865B6200090F487 /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,8 +289,17 @@
 			children = (
 				E8E4DB972865B5CF0090F487 /* Coordinator */,
 				E8E4DB962865B5CC0090F487 /* View */,
+				E8E4DB952865B5CA0090F487 /* ViewModel */,
 			);
 			path = ModalScene;
+			sourceTree = "<group>";
+		};
+		E8E4DB952865B5CA0090F487 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4DB9E2865B6200090F487 /* ModalViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E8E4DB962865B5CC0090F487 /* View */ = {
@@ -391,6 +402,7 @@
 				E8E4DB9B2865B5F70090F487 /* ModalCoordinator.swift in Sources */,
 				E883C1402864C707009A2470 /* FirstCoordinator.swift in Sources */,
 				E883C14A2864DCAE009A2470 /* ThirdViewModel.swift in Sources */,
+				E8E4DB9F2865B6200090F487 /* ModalViewModel.swift in Sources */,
 				E84C4A8128646FF600493D27 /* SecondViewController.swift in Sources */,
 				E84C4A832864701000493D27 /* ThirdViewController.swift in Sources */,
 				E84C4A88286471E900493D27 /* HomeCoordinator.swift in Sources */,
