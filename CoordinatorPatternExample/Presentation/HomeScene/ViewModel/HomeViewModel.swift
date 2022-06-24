@@ -25,28 +25,28 @@ protocol HomeViewModel: HomeViewModelInput {}
 
 final class DefaultHomeViewModel {
     
-    private weak var coordinatorDelegate: HomeCoordinatingDelegate?
+    private weak var coordinatingDelegate: HomeCoordinatingDelegate?
     
     init(coordinatorDelegate: HomeCoordinatingDelegate) {
-        self.coordinatorDelegate = coordinatorDelegate
+        self.coordinatingDelegate = coordinatorDelegate
     }
 }
 
 extension DefaultHomeViewModel: HomeViewModel {
     
     func didTapMoveFirstButton() {
-        coordinatorDelegate?.pushToFirst()
+        coordinatingDelegate?.pushToFirst()
     }
     
     func didTapMoveSecondButton() {
-        coordinatorDelegate?.pushToSecond()
+        coordinatingDelegate?.pushToSecond()
     }
     
     func didTapMoveThirdButton() {
-        coordinatorDelegate?.pushToThird()
+        coordinatingDelegate?.pushToThird()
     }
     
     func didTapPresentModalButton() {
-        coordinatorDelegate?.presentToModal()
+        coordinatingDelegate?.presentToModal()
     }
 }

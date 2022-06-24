@@ -23,24 +23,24 @@ protocol ThirdViewModel: ThirdViewModelInput {}
 
 final class DefaultThirdViewModel {
     
-    private weak var coordinatorDelegate: ThirdViewCoordinatingDelegate?
+    private weak var coordinatingDelegate: ThirdViewCoordinatingDelegate?
     
     init(coordinatorDelegate: ThirdViewCoordinatingDelegate) {
-        self.coordinatorDelegate = coordinatorDelegate
+        self.coordinatingDelegate = coordinatorDelegate
     }
 }
 
 extension DefaultThirdViewModel: ThirdViewModel {
     
     func didFinish() {
-        coordinatorDelegate?.finishCoordinating()
+        coordinatingDelegate?.finishCoordinating()
     }
     
     func didTapMoveFirstButton() {
-        coordinatorDelegate?.pushToFirst()
+        coordinatingDelegate?.pushToFirst()
     }
     
     func didTapMoveSecondButton() {
-        coordinatorDelegate?.pushToSecond()
+        coordinatingDelegate?.pushToSecond()
     }
 }

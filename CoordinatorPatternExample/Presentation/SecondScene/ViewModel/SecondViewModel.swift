@@ -23,24 +23,24 @@ protocol SecondViewModel: SecondViewModelInput {}
 
 final class DefaultSecondViewModel {
     
-    private weak var coordinatorDelegate: SecondViewCoordinatingDelegate?
+    private weak var coordinatingDelegate: SecondViewCoordinatingDelegate?
     
     init(coordinatorDelegate: SecondViewCoordinatingDelegate) {
-        self.coordinatorDelegate = coordinatorDelegate
+        self.coordinatingDelegate = coordinatorDelegate
     }
 }
 
 extension DefaultSecondViewModel: SecondViewModel {
     
     func didFinish() {
-        coordinatorDelegate?.finishCoordinating()
+        coordinatingDelegate?.finishCoordinating()
     }
     
     func didTapMoveFirstButton() {
-        coordinatorDelegate?.pushToFirst()
+        coordinatingDelegate?.pushToFirst()
     }
     
     func didTapMoveThirdButton() {
-        coordinatorDelegate?.pushToThird()
+        coordinatingDelegate?.pushToThird()
     }
 }
