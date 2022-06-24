@@ -37,7 +37,6 @@ extension DefaultFirstViewModel: FirstViewModel {
     }
     
     func didTapMoveSecondButton() {
-        print("Tap second")
         coordinatorDelegate?.pushToSecond()
     }
     

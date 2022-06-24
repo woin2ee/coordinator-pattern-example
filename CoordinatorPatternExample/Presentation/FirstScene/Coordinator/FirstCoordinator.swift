@@ -24,8 +24,6 @@ final class FirstCoordinator: ParentCoordinator, ChildCoordinator {
     func start() {
         let firstVC = FirstViewController.instantiate(storyboardName: "First")
         firstVC.bind(viewModel: DefaultFirstViewModel(coordinatorDelegate: self))
-//        self.navigationController.modalTransitionStyle = .coverVertical
-//        self.navigationController.modalPresentationStyle = .fullScreen
         self.navigationController.pushViewController(firstVC, animated: true)
     }
 }
