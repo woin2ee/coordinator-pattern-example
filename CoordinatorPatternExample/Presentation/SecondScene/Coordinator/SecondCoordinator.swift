@@ -29,7 +29,7 @@ final class SecondCoordinator: ChildCoordinator {
 
 extension SecondCoordinator: SecondViewCoordinatingDelegate {
     
-    func didFinishCoordinating() {
+    func finishCoordinating() {
         parentCoordinator?.childDidFinish(self)
     }
 }

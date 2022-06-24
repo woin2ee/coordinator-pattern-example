@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HomeCoordinator: ParentCoordinator {
+final class HomeCoordinator: NSObject, ParentCoordinator {
     
     var childCoordinators: [ChildCoordinator] = []
     var navigationController: UINavigationController
@@ -20,12 +20,14 @@ final class HomeCoordinator: ParentCoordinator {
         let homeVC = HomeViewController.instantiate(storyboardName: "Home")
         homeVC.bind(viewModel: DefaultHomeViewModel(coordinatorDelegate: self))
         self.navigationController.pushViewController(homeVC, animated: false)
+        
+        self.navigationController.delegate = self
     }
 }
 
 extension HomeCoordinator: HomeCoordinatingDelegate {
     
-    func pushToFirstView() {
+    func pushToFirst() {
         let firstCoordinator = FirstCoordinator(
             parentCoordinator: self,
             navigationController: self.navigationController
@@ -34,7 +36,7 @@ extension HomeCoordinator: HomeCoordinatingDelegate {
         firstCoordinator.start()
     }
     
-    func pushToSecondView() {
+    func pushToSecond() {
         let secondCoordinator = SecondCoordinator(
             parentCoordinator: self,
             navigationController: self.navigationController
@@ -43,12 +45,20 @@ extension HomeCoordinator: HomeCoordinatingDelegate {
         secondCoordinator.start()
     }
     
-    func pushToThirdView() {
+    func pushToThird() {
         let thirdCoordinator = ThirdCoordinator(
             parentCoordinator: self,
             navigationController: self.navigationController
         )
         childCoordinators.append(thirdCoordinator)
         thirdCoordinator.start()
+    }
+}
+
+extension HomeCoordinator: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        print("------------------------------------------------------------------")
+        print(navigationController.viewControllers.description)
+        print("------------------------------------------------------------------")
     }
 }

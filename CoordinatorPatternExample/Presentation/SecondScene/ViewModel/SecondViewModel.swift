@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SecondViewCoordinatingDelegate: AnyObject {
-    func didFinishCoordinating()
+    func finishCoordinating()
 }
 
 protocol SecondViewModelInput {
@@ -29,6 +29,6 @@ final class DefaultSecondViewModel {
 extension DefaultSecondViewModel: SecondViewModel {
     
     func didFinish() {
-        coordinatorDelegate?.didFinishCoordinating()
+        coordinatorDelegate?.finishCoordinating()
     }
 }

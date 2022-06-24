@@ -19,15 +19,15 @@ final class HomeViewController: UIViewController, Instantiable {
         self.viewModel = viewModel
     }
     
-    @IBAction func moveFirstViewButtonDidTap(_ sender: Any) {
-        viewModel?.didTapMoveFirstViewButton()
+    @IBAction func moveFirstButtonDidTap(_ sender: Any) {
+        viewModel?.didTapMoveFirstButton()
     }
     
-    @IBAction func moveSecondViewButtonDidTap(_ sender: Any) {
-        viewModel?.didTapMoveSecondViewButton()
+    @IBAction func moveSecondButtonDidTap(_ sender: Any) {
+        viewModel?.didTapMoveSecondButton()
     }
     
-    @IBAction func moveThirdViewButtonDidTap(_ sender: Any) {
-        viewModel?.didTapMoveThirdViewButton()
+    @IBAction func moveThirdButtonDidTap(_ sender: Any) {
+        viewModel?.didTapMoveThirdButton()
     }
 }

@@ -8,15 +8,15 @@
 import Foundation
 
 protocol HomeCoordinatingDelegate: AnyObject {
-    func pushToFirstView()
-    func pushToSecondView()
-    func pushToThirdView()
+    func pushToFirst()
+    func pushToSecond()
+    func pushToThird()
 }
 
 protocol HomeViewModelInput {
-    func didTapMoveFirstViewButton()
-    func didTapMoveSecondViewButton()
-    func didTapMoveThirdViewButton()
+    func didTapMoveFirstButton()
+    func didTapMoveSecondButton()
+    func didTapMoveThirdButton()
 }
 
 protocol HomeViewModel: HomeViewModelInput {}
@@ -32,15 +32,15 @@ final class DefaultHomeViewModel {
 
 extension DefaultHomeViewModel: HomeViewModel {
     
-    func didTapMoveFirstViewButton() {
-        coordinatorDelegate?.pushToFirstView()
+    func didTapMoveFirstButton() {
+        coordinatorDelegate?.pushToFirst()
     }
     
-    func didTapMoveSecondViewButton() {
-        coordinatorDelegate?.pushToSecondView()
+    func didTapMoveSecondButton() {
+        coordinatorDelegate?.pushToSecond()
     }
     
-    func didTapMoveThirdViewButton() {
-        coordinatorDelegate?.pushToThirdView()
+    func didTapMoveThirdButton() {
+        coordinatorDelegate?.pushToThird()
     }
 }

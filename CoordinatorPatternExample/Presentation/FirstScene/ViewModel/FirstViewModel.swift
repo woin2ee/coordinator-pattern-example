@@ -8,11 +8,15 @@
 import Foundation
 
 protocol FirstViewCoordinatingDelegate: AnyObject {
-    func didFinishCoordinating()
+    func finishCoordinating()
+    func pushToSecond()
+    func pushToThird()
 }
 
 protocol FirstViewModelInput {
     func didFinish()
+    func didTapMoveSecondButton()
+    func didTapMoveThirdButton()
 }
 
 protocol FirstViewModel: FirstViewModelInput {}
@@ -29,6 +33,15 @@ final class DefaultFirstViewModel {
 extension DefaultFirstViewModel: FirstViewModel {
     
     func didFinish() {
-        coordinatorDelegate?.didFinishCoordinating()
+        coordinatorDelegate?.finishCoordinating()
+    }
+    
+    func didTapMoveSecondButton() {
+        print("Tap second")
+        coordinatorDelegate?.pushToSecond()
+    }
+    
+    func didTapMoveThirdButton() {
+        coordinatorDelegate?.pushToThird()
     }
 }

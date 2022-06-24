@@ -17,45 +17,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWB-GB-fas">
-                                <rect key="frame" x="93" y="292" width="228" height="50"/>
+                                <rect key="frame" x="128" y="292" width="158" height="50"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Move First View">
+                                <buttonConfiguration key="configuration" style="filled" title="Move First">
                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="moveFirstViewButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MxH-i6-vgn"/>
+                                    <action selector="moveFirstButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pH1-5V-jqr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNa-cC-IfN">
-                                <rect key="frame" x="71.5" y="428" width="271" height="50"/>
+                                <rect key="frame" x="106.5" y="428" width="201" height="50"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Move Second View">
+                                <buttonConfiguration key="configuration" style="filled" title="Move Second">
                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="moveSecondViewButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhD-5u-0U2"/>
+                                    <action selector="moveSecondButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nv-LE-D1q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq7-Kw-BJz">
-                                <rect key="frame" x="87.5" y="564" width="239" height="50"/>
+                                <rect key="frame" x="122.5" y="564" width="169" height="50"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Move Third View">
+                                <buttonConfiguration key="configuration" style="filled" title="Move Third">
                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="moveThirdViewButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Wd-J7-aZx"/>
+                                    <action selector="moveThirdButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aN3-KK-5wG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRs-g7-Gy2">
+                                <rect key="frame" x="155.5" y="157" width="103.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DWB-GB-fas" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Ff-hC-ObZ"/>
                             <constraint firstItem="eq7-Kw-BJz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.3" id="DW2-Zi-9R8"/>
+                            <constraint firstItem="cRs-g7-Gy2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UeC-G2-hZ5"/>
                             <constraint firstItem="eq7-Kw-BJz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZSc-rJ-lTN"/>
                             <constraint firstItem="DWB-GB-fas" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.7" id="j5M-Dp-TAY"/>
                             <constraint firstItem="RNa-cC-IfN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sNC-QM-9EK"/>
                             <constraint firstItem="RNa-cC-IfN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vRX-N1-IAU"/>
+                            <constraint firstItem="cRs-g7-Gy2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.4" id="xrQ-tJ-FL4"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -17,6 +17,7 @@ protocol ParentCoordinator: Coordinator {
     var childCoordinators: [ChildCoordinator] { get set }
     
     func childDidFinish(_ child: ChildCoordinator?)
+    func childDidFinish(_ child: (ParentCoordinator & ChildCoordinator)?)
 }
 
 extension ParentCoordinator {
@@ -27,6 +28,15 @@ extension ParentCoordinator {
                 break
             }
         }
+    }
+    
+    func childDidFinish(_ child: (ParentCoordinator & ChildCoordinator)?) {
+        guard
+            let child = child,
+            child.childCoordinators.isEmpty
+        else { return }
+
+        self.childDidFinish(child as ChildCoordinator)
     }
 }
 
