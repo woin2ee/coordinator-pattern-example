@@ -23,4 +23,12 @@ final class SecondViewController: UIViewController, Instantiable {
     func bind(viewModel: SecondViewModel) {
         self.viewModel = viewModel
     }
+    
+    @IBAction func moveFirstButtonDidTap(_ sender: Any) {
+        viewModel?.didTapMoveFirstButton()
+    }
+    
+    @IBAction func moveThirdButtonDidTap(_ sender: Any) {
+        viewModel?.didTapMoveThirdButton()
+    }
 }

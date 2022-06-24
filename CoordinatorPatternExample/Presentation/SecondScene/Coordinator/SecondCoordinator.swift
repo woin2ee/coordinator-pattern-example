@@ -7,8 +7,9 @@
 
 import UIKit
 
-final class SecondCoordinator: ChildCoordinator {
+final class SecondCoordinator: ParentCoordinator, ChildCoordinator {
     
+    var childCoordinators: [ChildCoordinator] = []
     weak var parentCoordinator: ParentCoordinator?
     var navigationController: UINavigationController
     
@@ -31,5 +32,23 @@ extension SecondCoordinator: SecondViewCoordinatingDelegate {
     
     func finishCoordinating() {
         parentCoordinator?.childDidFinish(self)
+    }
+    
+    func pushToFirst() {
+        let firstCoordinator = FirstCoordinator(
+            parentCoordinator: self,
+            navigationController: self.navigationController
+        )
+        childCoordinators.append(firstCoordinator)
+        firstCoordinator.start()
+    }
+    
+    func pushToThird() {
+        let thirdCoordinator = ThirdCoordinator(
+            parentCoordinator: self,
+            navigationController: self.navigationController
+        )
+        childCoordinators.append(thirdCoordinator)
+        thirdCoordinator.start()
     }
 }

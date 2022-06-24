@@ -9,10 +9,14 @@ import Foundation
 
 protocol SecondViewCoordinatingDelegate: AnyObject {
     func finishCoordinating()
+    func pushToFirst()
+    func pushToThird()
 }
 
 protocol SecondViewModelInput {
     func didFinish()
+    func didTapMoveFirstButton()
+    func didTapMoveThirdButton()
 }
 
 protocol SecondViewModel: SecondViewModelInput {}
@@ -30,5 +34,13 @@ extension DefaultSecondViewModel: SecondViewModel {
     
     func didFinish() {
         coordinatorDelegate?.finishCoordinating()
+    }
+    
+    func didTapMoveFirstButton() {
+        coordinatorDelegate?.pushToFirst()
+    }
+    
+    func didTapMoveThirdButton() {
+        coordinatorDelegate?.pushToThird()
     }
 }

@@ -8,11 +8,15 @@
 import Foundation
 
 protocol ThirdViewCoordinatingDelegate: AnyObject {
-    func didFinishCoordinating()
+    func finishCoordinating()
+    func pushToFirst()
+    func pushToSecond()
 }
 
 protocol ThirdViewModelInput {
     func didFinish()
+    func didTapMoveFirstButton()
+    func didTapMoveSecondButton()
 }
 
 protocol ThirdViewModel: ThirdViewModelInput {}
@@ -29,6 +33,14 @@ final class DefaultThirdViewModel {
 extension DefaultThirdViewModel: ThirdViewModel {
     
     func didFinish() {
-        coordinatorDelegate?.didFinishCoordinating()
+        coordinatorDelegate?.finishCoordinating()
+    }
+    
+    func didTapMoveFirstButton() {
+        coordinatorDelegate?.pushToFirst()
+    }
+    
+    func didTapMoveSecondButton() {
+        coordinatorDelegate?.pushToSecond()
     }
 }
