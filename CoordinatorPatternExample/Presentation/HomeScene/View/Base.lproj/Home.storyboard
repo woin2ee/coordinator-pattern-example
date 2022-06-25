@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWB-GB-fas">
-                                <rect key="frame" x="128" y="292" width="158" height="50"/>
+                                <rect key="frame" x="24.5" y="292" width="158" height="50"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Move First">
                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
@@ -62,15 +62,27 @@
                                     <action selector="presentModalButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBK-sZ-kb0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baU-ZV-Q3I">
+                                <rect key="frame" x="218" y="292" width="185" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Present First">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="presentFirstButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kkb-az-gKi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DWB-GB-fas" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Ff-hC-ObZ"/>
+                            <constraint firstItem="DWB-GB-fas" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.5" id="9Ff-hC-ObZ"/>
+                            <constraint firstItem="baU-ZV-Q3I" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.7" id="C5m-7E-jIA"/>
                             <constraint firstItem="eq7-Kw-BJz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.3" id="DW2-Zi-9R8"/>
                             <constraint firstItem="cRs-g7-Gy2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UeC-G2-hZ5"/>
                             <constraint firstItem="eq7-Kw-BJz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZSc-rJ-lTN"/>
                             <constraint firstItem="DWB-GB-fas" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.7" id="j5M-Dp-TAY"/>
+                            <constraint firstItem="baU-ZV-Q3I" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.5" id="o4a-JO-XL5"/>
                             <constraint firstItem="BEl-36-nK6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.6" id="pxB-2C-Dvq"/>
                             <constraint firstItem="RNa-cC-IfN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sNC-QM-9EK"/>
                             <constraint firstItem="RNa-cC-IfN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vRX-N1-IAU"/>

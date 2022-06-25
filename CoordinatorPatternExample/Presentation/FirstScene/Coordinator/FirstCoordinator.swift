@@ -26,6 +26,18 @@ final class FirstCoordinator: ParentCoordinator, ChildCoordinator {
         firstVC.bind(viewModel: DefaultFirstViewModel(coordinatorDelegate: self))
         self.navigationController.pushViewController(firstVC, animated: true)
     }
+    
+    func startToModal() {
+        let firstVC = FirstViewController.instantiate(storyboardName: "First")
+        firstVC.bind(viewModel: DefaultFirstViewModel(coordinatorDelegate: self))
+        
+        let firstNC = UINavigationController()
+        firstNC.setViewControllers([firstVC], animated: false)
+        
+        self.navigationController.viewControllers.last?.present(firstNC, animated: true)
+        
+        self.navigationController = firstNC
+    }
 }
 
 extension FirstCoordinator: FirstViewCoordinatingDelegate {

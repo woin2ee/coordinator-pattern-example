@@ -34,6 +34,15 @@ extension HomeCoordinator: HomeCoordinatingDelegate {
         firstCoordinator.start()
     }
     
+    func presentToFirst() {
+        let firstCoordinator = FirstCoordinator(
+            parentCoordinator: self,
+            navigationController: self.navigationController
+        )
+        childCoordinators.append(firstCoordinator)
+        firstCoordinator.startToModal()
+    }
+    
     func pushToSecond() {
         let secondCoordinator = SecondCoordinator(
             parentCoordinator: self,

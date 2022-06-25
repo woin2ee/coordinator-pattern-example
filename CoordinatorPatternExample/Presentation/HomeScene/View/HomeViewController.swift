@@ -23,6 +23,10 @@ final class HomeViewController: UIViewController, Instantiable {
         viewModel?.didTapMoveFirstButton()
     }
     
+    @IBAction func presentFirstButtonDidTap(_ sender: Any) {
+        viewModel?.didTapPresentFirstButton()
+    }
+    
     @IBAction func moveSecondButtonDidTap(_ sender: Any) {
         viewModel?.didTapMoveSecondButton()
     }

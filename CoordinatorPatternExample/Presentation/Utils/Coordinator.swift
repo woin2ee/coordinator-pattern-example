@@ -35,7 +35,7 @@ extension ParentCoordinator {
             let child = child,
             child.childCoordinators.isEmpty
         else { return }
-
+        
         self.childDidFinish(child as ChildCoordinator)
     }
 }

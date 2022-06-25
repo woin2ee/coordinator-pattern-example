@@ -9,6 +9,7 @@ import Foundation
 
 protocol HomeCoordinatingDelegate: AnyObject {
     func pushToFirst()
+    func presentToFirst()
     func pushToSecond()
     func pushToThird()
     func presentToModal()
@@ -16,6 +17,7 @@ protocol HomeCoordinatingDelegate: AnyObject {
 
 protocol HomeViewModelInput {
     func didTapMoveFirstButton()
+    func didTapPresentFirstButton()
     func didTapMoveSecondButton()
     func didTapMoveThirdButton()
     func didTapPresentModalButton()
@@ -36,6 +38,10 @@ extension DefaultHomeViewModel: HomeViewModel {
     
     func didTapMoveFirstButton() {
         coordinatingDelegate?.pushToFirst()
+    }
+    
+    func didTapPresentFirstButton() {
+        coordinatingDelegate?.presentToFirst()
     }
     
     func didTapMoveSecondButton() {
