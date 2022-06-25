@@ -2,10 +2,10 @@
 
 ### pushViewController() 화면 전환
 
-<img width="200" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175770064-8bbc07d4-d41c-4f60-9eca-bf4ea24a874e.png"> -> 
-<img width="200" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175770122-f65b3424-3d87-4420-b7e9-5448b17151e3.png"> -> 
-<img width="200" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175770135-5a1bd4a4-d860-41d0-a65d-2ad837965e89.png"> -> 
-<img width="200" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175769935-6909fb46-8009-487c-ad33-1744fe91e95e.png">
+<img width="170" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175770064-8bbc07d4-d41c-4f60-9eca-bf4ea24a874e.png"> -> 
+<img width="170" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175770122-f65b3424-3d87-4420-b7e9-5448b17151e3.png"> -> 
+<img width="170" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175770135-5a1bd4a4-d860-41d0-a65d-2ad837965e89.png"> -> 
+<img width="170" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175769935-6909fb46-8009-487c-ad33-1744fe91e95e.png">
 
 ### present() 화면 전환
 
