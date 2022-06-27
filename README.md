@@ -1,4 +1,4 @@
-# MVVM + Coordinator 패턴 example project
+# MVVM + Coordinator 디자인 패턴 example
 
 ### pushViewController() 화면 전환
 
