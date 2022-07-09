@@ -1,6 +1,6 @@
 # CoordinatorPatternExample
 
-> MVVM + Coordinator 패턴으로 화면 전환을 구현
+> MVVM-C 패턴으로 화면 전환을 구현
 
 
 ## Screenshots
