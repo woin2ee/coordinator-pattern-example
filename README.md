@@ -19,6 +19,10 @@
 <img width="200" align="middle" alt="image" src="https://user-images.githubusercontent.com/81426024/175770208-e3c8c4f2-0bce-497d-b076-95dbd27be7bd.png">
 
 
+## Demo
+
+<img width="250" src="https://user-images.githubusercontent.com/81426024/179393490-24b17f97-f9fc-4024-8c87-70979ea2c465.gif">
+
 ## Relationship diagram
 
 <img width="1041" alt="image" src="https://user-images.githubusercontent.com/81426024/175772477-400bd04a-01cf-4a97-be5a-46a5accafd50.png">
